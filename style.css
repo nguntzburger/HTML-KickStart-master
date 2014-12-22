@@ -13,13 +13,13 @@
 	OVERRIDES
 -----------------------------------*/
 h1,h2,h3,h4,h5,h6{
-font-family: "Arimo", arial, verdana, sans-serif;
+font-family: "Modern No. 20", arial, verdana, sans-serif;
 font-weight:normal;
 }
 
 thead th,
 tbody th{
-font-family: "Arimo", arial, verdana, sans-serif;
+font-family: "Modern No. 20", sans-serif;
 }
 
 button,
@@ -27,15 +27,15 @@ a.btn,
 input[type="submit"],
 input[type="reset"],
 input[type="button"]{
-font-family: "Arimo", arial, verdana, sans-serif;
+font-family: "Modern No. 20", serif;
 }
 
 .menu{
-font-family: "Arimo", arial, verdana, sans-serif;
+font-family: "Modern No. 20", serif;
 }
 
 blockquote{
-font-family: "Arimo", arial, verdana, sans-serif;
+font-family: "Modern No. 20", serif;
 }
 
 /*---------------------------------
@@ -46,7 +46,6 @@ margin:0;
 padding:0 0 0 0;
 color:#000;
 background:#efefef url(css/img/gray_jean.png);
-font:normal 0.9em/150% 'Arimo', arial, verdana, sans-serif;
 text-shadow: 0 0 1px transparent; /* google font pixelation fix */
 }
 
@@ -58,6 +57,14 @@ padding:0 2%;
 border:1px solid #ccc;
 }
 
+
+
+
+* {
+  font-family: "Modern No. 20";
+}
+
+/** FOOTER **/
 
 #footer{
 text-align:center;
@@ -77,54 +84,149 @@ background:#fff;
 	display:none;
 	}
 
-/* NAV BAR*/
-.navbar{
-position:fixed;
-top:0;
-left:0;
-width: 100%;
-background:#000;
-color:#fff;
-z-index:1000;
+/** NAVIGATION **/
+
+  #navbar {
+   position: fixed;
+   opacity: .95;
+   top: 0;
+   left: 0;
+   width: 100%;
+   padding: 10px;
+   background: #FFFFFF;
+   text-align: center;
+   border-bottom :2px solid #CCC;
+  }      
+
+  #navbar ul {
+    list-style: none;
+    margin-left: 40px;     
+    padding: .3em;  
+    margin-left: 520px;       
+  }            
+
+  #navbar li {       
+    float: left;      
+    margin-left: 5px;    
+  }      
+
+  #navbar li a {       
+    display: block;      
+    background-color:#FFFFFF;      
+    text-decoration: none;      
+    border: none;      
+    padding: .5em; 
+    color: #333;     
+  }
+
+  #navbar li a:hover {           
+    color: #000000;      
+    text-decoration: underline;      
+  }
+
+  #navbar li ul {       
+    display: none;
+    position: absolute;            
+    padding: 0;      
+  }
+
+  #navbar li:hover ul {       
+    background-color: #FFFFFF;      
+    text-align: center;      
+    line-height: 3em;      
+    display: block;      
+    padding: 10px;      
+  }
+
+  #navbar li li {       
+    float: none;      
+    border-bottom: .75px solid #333;      
+  }
+
+  #navbar li li a {       
+    border: 0;      
+    border-left:  1px solid #CCC;      
+    border-right: 1px solid #CCC; 
+  } 
+
+  /** HOME PAGE CONTENT **/
+
+#homephoto {
+	padding: 100px 0px 0px 130px;
 }
 
-	.navbar #logo{
-	position:absolute;
-	top:0;
-	right:0;
-	padding:0.5em 1em;
-	font-size: 1.7em;
-	color:#efefef;
-	text-decoration:none;
+#hometext {
+	text-align: center;
+	color: #333;
+	padding: 0px 350px 100px 350px;
+	line-height: 1.5em;
 	}
 
-	.navbar span{
-	color:#86dc00;
-	}
+#hometext h1 h5{
+	line-height: .5em;
+}
+
+/** BREW PAGE CONTENT **/
+
+#brewcontent {
+	padding-top: 100px;
+	padding-bottom: 100px;
+	margin: 0px 130px 0px 130px;
+}
+
+#brewcontent img {
+	width: 35%;
+	padding-bottom: 50px;
+}
+
+#brewcontent h1{
+	text-align: center;
+	padding-bottom: 40px;
+}
+
+#brewcontent p {
+	width: 60%;
+	float: right;
+	padding-top: 50px;
+}
+
+/** ESPRESSO PAGE CONTENT **/
+
+#espressocontent {
+	padding-top: 100px;
+	padding-bottom: 100px;
+	margin: 0px 130px 0px 130px;
+}
+
+#espressocontent h1 {
+	text-align: center;
+	padding-bottom: 40px;
+}
+
+#espresso-header {
+	width: 100%;
+	padding-bottom: 50px;
+}
+
+#coffee-guide {
+	width: 100%;
+	padding: 50px 0px 50px 0px;
+}
+
+#espressocontent p {
+	line-height: 2em;
+	text-align: center;
+}
+
+#espressocontent h4 {
+	text-align: center;
+}
 
 
-	.navbar ul{
-	display:inline-block;
-	margin:0;
-	padding:0;
-	}
 
-		.navbar li{
-		margin:0;
-		padding:0;
-		list-style-type:0;
-		display:inline-block;
-		}
 
-		.navbar li a{
-		display:inline-block;
-		color:#efefef;
-		padding:1em 1.3em;
-		text-decoration:none;
-		text-transform: uppercase;
-		line-height:100%;
-		font-size: 1.2em;
-		}
+
+
 
 .callout{
 background:#4598ef;/*#86dc00;*/
