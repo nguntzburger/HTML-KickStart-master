@@ -64,27 +64,9 @@ border:1px solid #ccc;
   font-family: "Modern No. 20";
 }
 
-/** FOOTER **/
-
-#footer{
-text-align:center;
-padding:20px;
-margin:0;
-border-top:1px solid #ddd;
-color:#999;
-font-size:0.8em;
-text-shadow:0px 1px 1px #fff;
-position: relative;
-top:0;
-left:0;
-background:#fff;
-}
-
-	#link-top{
-	display:none;
-	}
-
-/** NAVIGATION **/
+/************
+NAVIGATION 
+************/
 
   #navbar {
    position: fixed;
@@ -149,24 +131,33 @@ background:#fff;
     border-right: 1px solid #CCC; 
   } 
 
-  /** HOME PAGE CONTENT **/
+/************
+HOME PAGE 
+************/
 
-#homephoto {
-	padding: 100px 0px 0px 130px;
+#homecontent {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  margin: 0px 130px 0px 130px;
 }
 
-#hometext {
-	text-align: center;
-	color: #333;
-	padding: 0px 350px 100px 350px;
-	line-height: 1.5em;
-	}
-
-#hometext h1 h5{
-	line-height: .5em;
+#homecontent h1 {
+  text-align: center;
 }
 
-/** BREW PAGE CONTENT **/
+#homecontent h5 {
+  text-align: center;
+}
+
+#homecontent p {
+  text-align: center;
+  padding: 0px 200px 0px 200px;
+  line-height: 2em;
+}
+
+/************
+BREW PAGE 
+************/
 
 #brewcontent {
 	padding-top: 100px;
@@ -190,7 +181,10 @@ background:#fff;
 	padding-top: 50px;
 }
 
-/** ESPRESSO PAGE CONTENT **/
+/************
+ ESPRESSO 
+ PAGE 
+ ************/
 
 #espressocontent {
 	padding-top: 100px;
@@ -222,11 +216,98 @@ background:#fff;
 	text-align: center;
 }
 
+/************
+ TRAVEL PAGE
+ ************/
 
+#travelcontent {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  margin: 0px 130px 0px 130px;
+}
 
+#travelcontent h1 {
+  text-align: center;
+  padding-bottom: 40px;
+}
 
+#travelcontent img {
+  padding-bottom: 50px;
+}
 
+#travelcontent p {
+  line-height: 2em;
+  text-align: center;
+}
 
+/************
+ CONTACT PAGE 
+ ************/
+
+#contactcontent {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  margin: 0px 130px 0px 130px;
+}
+
+#contactcontent h1 {
+    text-align: center;
+  padding-bottom: 40px;
+}
+
+#contactcontent ul {
+  padding-left: 310px;
+  list-style: none;
+}
+
+#contactcontent textarea {
+  width: 60%;
+}
+
+#contactcontent input {
+  width: 60%;
+}
+
+#instagram h4 {
+  text-align: center;
+  padding-bottom: 0px;
+  padding-top: 50px;
+}
+
+#instagram p {
+  text-align: center;
+}
+
+#instagram img {
+  padding-right: 15px;
+}
+
+#contact-photos {
+  margin-left: 150px;
+  padding-top: 30px;
+}
+
+/************
+ FOOTER 
+ ************/
+
+#footer{
+text-align:center;
+padding:20px;
+margin:0;
+border-top:1px solid #ddd;
+color:#999;
+font-size:0.8em;
+text-shadow:0px 1px 1px #fff;
+position: relative;
+top:0;
+left:0;
+background:#fff;
+}
+
+  #link-top{
+  display:none;
+  }
 
 .callout{
 background:#4598ef;/*#86dc00;*/
